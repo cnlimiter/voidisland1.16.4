@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_8",
+  "package": "cn.evolvefield.mods.VoidIsland.mixin",
+  "refmap": "voidisland.refmap.json",
+  "mixins": [
+    
+  ],
+  "client": [
+    
+    "MixinClientWorldInfo"
+    
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

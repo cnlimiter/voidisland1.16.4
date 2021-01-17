@@ -1,0 +1,15 @@
+{
+  "generator.skyblock":"SkyIsland",
+  "voidisland.command.skyblock.island.success": "Successfully created the island for player %s",
+  "voidisland.command.skyblock.island.teleported": "Teleported player %s as an island already exists",
+  "voidisland.command.skyblock.regenisland.success": "Successfully regenerated the island for player %s",
+  "voidisland.command.skyblock.teleport.success": "Teleported player %s to the island %s",
+  "voidisland.command.skyblock.spawn.success": "Teleported player %s to the spawn island",
+  "voidisland.command.skyblock.world": "The command cannot be used in a non-skyblock dimension",
+  "voidisland.command.skyblock.noisland": "An island for this player does not exist",
+  "voidisland.command.skyblock.help.0": "/is help - prints this message",
+  "voidisland.command.skyblock.help.1": "/is my <player> - creates a new island or teleports the player to their existing one if one exists",
+  "voidisland.command.skyblock.help.2": "/is spawn - teleports the user to the spawn island",
+  "voidisland.command.skyblock.help.3": "/is visit <player|playerUuid> - teleports the user to the specified player's island",
+  "voidisland.command.skyblock.help.4": "/is regen-island <player|playerUuid> - rebuilds the specified player's island"
+}
