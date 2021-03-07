@@ -7,11 +7,12 @@
   "voidisland.command.skyblock.spawn.success": "成功把玩家 %s 传送至主城",
   "voidisland.command.skyblock.world": "这条命令不能在非空岛维度使用",
   "voidisland.command.skyblock.noisland": "玩家没有空岛",
-  "voidisland.command.skyblock.help.0": "/is help - 获取帮助",
-  "voidisland.command.skyblock.help.1": "/is my <player> - 创建一个空岛/或者回到已有的空岛",
+  "voidisland.command.skyblock.help.0": "/is help - 获取帮助(管理员指令)",
+  "voidisland.command.skyblock.help.1": "/is my <player> - 创建一个空岛/或者回到玩家已有的空岛",
   "voidisland.command.skyblock.help.2": "/is spawn - 把玩家传送至主城",
   "voidisland.command.skyblock.help.3": "/is visit <player|playerUuid> - 访问另一个玩家的空岛",
-  "voidisland.command.skyblock.help.4": "/is regen-island <player|playerUuid> - 重新生成一个空岛"
+  "voidisland.command.skyblock.help.4": "/is regen-island <player|playerUuid> - 重新生成一个空岛",
+  "item.voidisland.item_pebble": "卵石"
 
 
 

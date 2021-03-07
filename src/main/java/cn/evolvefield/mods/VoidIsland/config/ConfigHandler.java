@@ -18,7 +18,7 @@ public class ConfigHandler {
 
             gogIslandScaleMultiplier = builder
                     .comment("多人游戏中每个到岛之间的距离的倍率.\n" +
-                            "在每个岛之间的默认距离是256格, 出生的岛通常会被放置在 256, 256.\n" +
+                            "每个岛之间的默认距离是256格, 生成的岛通常会被放置在 256, 256.\n" +
                             "如果倍率设置为 8, 每个岛之间有 2048 的方块距离.\n" +
                             "不推荐使用小于 4 (1024 的方块距离)的倍率 ")
                     .defineInRange("voidIsland.islandScaleMultiplier", 8, 1, 512);

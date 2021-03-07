@@ -3,6 +3,7 @@ package cn.evolvefield.mods.VoidIsland;
 import cn.evolvefield.mods.VoidIsland.commands.SkyblockCommand;
 import cn.evolvefield.mods.VoidIsland.config.ConfigHandler;
 import cn.evolvefield.mods.VoidIsland.network.PacketHandler;
+import cn.evolvefield.mods.VoidIsland.registry.ItemRegistry;
 import cn.evolvefield.mods.VoidIsland.world.ModFeatures;
 import cn.evolvefield.mods.VoidIsland.world.SkyblockChunkGenerator;
 import cn.evolvefield.mods.VoidIsland.world.SkyblockWorldEvents;
@@ -45,14 +46,14 @@ public class VoidIsland
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ConfigHandler.COMMON_SPEC);
 
-        //
+        //modbus
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
         modBus.addListener(this::commonSetup);
         modBus.addGenericListener(ForgeWorldType.class, ModFeatures::registerWorldType);
         modBus.addListener((ModConfig.Loading e) -> ConfigHandler.onConfigLoad());
         modBus.addListener((ModConfig.Reloading e) -> ConfigHandler.onConfigLoad());
 
-        //
+        //forgebus
         IEventBus forgeBus = MinecraftForge.EVENT_BUS;
         forgeBus.addListener(this::registerCommands);
 
@@ -61,6 +62,9 @@ public class VoidIsland
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+
+        //item
+        ItemRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
     }
 
@@ -71,7 +75,7 @@ public class VoidIsland
 
 
 
-            MinecraftForge.EVENT_BUS.addListener(SkyblockWorldEvents::syncGogStatus);
+            MinecraftForge.EVENT_BUS.addListener(SkyblockWorldEvents::syncVicStatus);
             MinecraftForge.EVENT_BUS.addListener(SkyblockWorldEvents::onPlayerJoin);
             MinecraftForge.EVENT_BUS.addListener(SkyblockWorldEvents::onPlayerInteract);
 

@@ -41,7 +41,7 @@ public class SkyblockCommand {
             return ISuggestionProvider.suggest(SkyblockSavedData.get(((CommandSource)ctx.getSource()).getWorld()).skyblocks.values().stream().map(UUID::toString), builder);
         }).executes((ctx) -> {
             return teleportToIsland(ctx, UUIDArgument.func_239195_a_(ctx, "playerUuid"));
-        })))).then(((LiteralArgumentBuilder)Commands.literal("regen-island").then(Commands.argument("player", EntityArgument.player()).executes((ctx) -> {
+        })))).then(((LiteralArgumentBuilder)Commands.literal("regen").then(Commands.argument("player", EntityArgument.player()).executes((ctx) -> {
             return rebuildIsland(ctx, EntityArgument.getPlayer(ctx, "player"));
         }))).then(Commands.argument("playerUuid", UUIDArgument.func_239194_a_()).suggests((ctx, builder) -> {
             return ISuggestionProvider.suggest(SkyblockSavedData.get(((CommandSource)ctx.getSource()).getWorld()).skyblocks.values().stream().map(UUID::toString), builder);

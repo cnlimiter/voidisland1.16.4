@@ -32,7 +32,7 @@ public final class SkyblockWorldEvents {
 
 	//private static final ResourceLocation PEBBLE_SOURCES = new ResourceLocation("gardenofglass:pebble_sources");
 
-	public static void syncGogStatus(EntityJoinWorldEvent evt) {
+	public static void syncVicStatus(EntityJoinWorldEvent evt) {
 		if (evt.getEntity() instanceof ServerPlayerEntity) {
 			boolean isGog = SkyblockChunkGenerator.isWorldSkyblock(evt.getWorld());
 			if (isGog) {

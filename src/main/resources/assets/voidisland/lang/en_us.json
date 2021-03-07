@@ -11,5 +11,6 @@
   "voidisland.command.skyblock.help.1": "/is my <player> - creates a new island or teleports the player to their existing one if one exists",
   "voidisland.command.skyblock.help.2": "/is spawn - teleports the user to the spawn island",
   "voidisland.command.skyblock.help.3": "/is visit <player|playerUuid> - teleports the user to the specified player's island",
-  "voidisland.command.skyblock.help.4": "/is regen-island <player|playerUuid> - rebuilds the specified player's island"
+  "voidisland.command.skyblock.help.4": "/is regen-island <player|playerUuid> - rebuilds the specified player's island",
+  "item.voidisland.item_pebble": "pebble"
 }
